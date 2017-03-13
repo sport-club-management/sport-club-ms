@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner signature="Workspace" version="15.1.0.2850"?>
+<!-- Veuillez ne pas modifier ce fichier -->
+
+<Workspace>
+	<Local Expanded="Yes">
+		<Model Expanded="Yes" ID="{78086B01-C9E1-11D4-9552-0090277716A9}" Name="Modèle Orienté Objet 1" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="Diagramme de classes.MOO"/>
+		<Model Expanded="Yes" ID="{0ACCDB60-ACA9-401C-BFB9-433D839F892A}" Name="Uses_Cases_Sport_Management_System" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="Uses_Cases_Sport_Management_System.moo"/>
+	</Local>
+	<BrowserModule Name="Référentiel"/>
+</Workspace>
