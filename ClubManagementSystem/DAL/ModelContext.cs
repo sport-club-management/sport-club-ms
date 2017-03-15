@@ -1,7 +1,6 @@
 ﻿namespace App
 {
-    using GenericWinForm.Demo.Entities;
-    using GenericWinForm.Demo.Entities.Resources;
+    using ClubManagement.Entities;
     using Gwin.Entities.Application;
     using Gwin.Entities.Authentication;
     using Gwin.Entities.ContactInformations;
