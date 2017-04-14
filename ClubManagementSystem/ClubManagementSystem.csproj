@@ -67,14 +67,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BAL\BaseBAO.cs" />
+    <Compile Include="BAL\BaseBLO.cs" />
+    <Compile Include="BAL\Class1.cs" />
     <Compile Include="BAL\GroupAgeBLO.cs" />
     <Compile Include="BAL\Security\RoleBAO.cs" />
-    <Compile Include="Migrations\201703081125294_Init.cs" />
-    <Compile Include="Migrations\201703081125294_Init.Designer.cs">
-      <DependentUpon>201703081125294_Init.cs</DependentUpon>
+    <Compile Include="DAL\Migrations\201704141031304_InitDataBase.cs" />
+    <Compile Include="DAL\Migrations\201704141031304_InitDataBase.Designer.cs">
+      <DependentUpon>201704141031304_InitDataBase.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="DAL\Migrations\Configuration.cs" />
     <Compile Include="DAL\ModelContext.cs" />
     <Compile Include="Entities\GroupAge.cs" />
     <Compile Include="Entities\Resources\GroupAge\GroupAge.ar.Designer.cs">
@@ -121,11 +122,14 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>GroupAge.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuApplication.ar.resx">
+      <DependentUpon>FormMenuApplication.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMenuApplication.resx">
       <DependentUpon>FormMenuApplication.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201703081125294_Init.resx">
-      <DependentUpon>201703081125294_Init.cs</DependentUpon>
+    <EmbeddedResource Include="DAL\Migrations\201704141031304_InitDataBase.resx">
+      <DependentUpon>201704141031304_InitDataBase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

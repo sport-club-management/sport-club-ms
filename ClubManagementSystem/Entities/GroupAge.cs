@@ -12,7 +12,7 @@ namespace ClubManagement.Entities
     /// <summary>
     /// الفئة العمرية
     /// </summary>
-    [DisplayEntity(Localizable = true,DisplayMember = "Type_Name")]
+    [GwinEntity(Localizable = true,DisplayMember = "Type_Name")]
     [Menu]
     public class GroupAge : BaseEntity
     {

@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using ClubManagement.Entities;
 using App.Gwin;
-using App.Gwin.Entities.Authentication;
 using App;
 using GenericWinForm.Demo;
+using App.Gwin.Entities.Secrurity.Authentication;
 
 namespace ClubManagement.BAL.Tests
 {

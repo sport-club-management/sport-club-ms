@@ -1,10 +1,12 @@
 ﻿namespace App
 {
+    using App.Gwin.Entities.Logging;
+    using App.Gwin.Entities.Secrurity.Authentication;
+    using App.Gwin.Entities.Secrurity.Autorizations;
+    using App.Gwin.GwinApplication.BLL.Configuration;
     using ClubManagement.Entities;
     using Gwin.Entities.Application;
-    using Gwin.Entities.Authentication;
     using Gwin.Entities.ContactInformations;
-    using Gwin.Entities.Security;
     using System;
     using System.Collections.Generic;
     using System.Data.Entity;
@@ -12,11 +14,10 @@
 
     public class ModelContext : DbContext
     {
-
-        public ModelContext() : base(@"data source =.\SQLEXPRESS; initial catalog = club_management_system; user = sa;password = admintp4; MultipleActiveResultSets = True; App = EntityFramework")
+ 
+        public ModelContext() : base(@"data source=(LocalDb)\MSSQLLocalDB;initial catalog=SportClubManagement;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework")
         {
-            // Integrated Security = true
-            // 
+
         }
 
         public ModelContext(string connectionString):base(connectionString)
@@ -27,14 +28,15 @@
         //
         // Gwin : Entites
         //
-        public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Authorization> Authorizations { get; set; }
+        public virtual DbSet<Role> Roles { get; set; }
+        public virtual DbSet<GwinActivity> GwinActivities { get; set; }
         public virtual DbSet<MenuItemApplication> MenuItemApplications { get; set; }
         public virtual DbSet<Country> Countrys { get; set; }
         public virtual DbSet<City> Citys { get; set; }
         public virtual DbSet<ContactInformation> ContactInformations { get; set; }
         public virtual DbSet<ApplicationName> ApplicationNames { get; set; }
-
 
         // Club Management System
         public virtual DbSet<GroupAge> GroupAges { get; set; }
