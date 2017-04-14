@@ -22,8 +22,8 @@ namespace GenericWinForm.Demo
         private void FormMenuApplication_Load(object sender, EventArgs e)
         {
             User user = null;
-            user = User.CreateGuestUser();
-            user = User.CreateRootUser();
+            user = User.CreateGuestUser(new ModelContext());
+           // user = User.CreateRootUser(new ModelContext());
             user.Language = GwinApp.Languages.ar;
 
             // Start Gwin Application with Authentification

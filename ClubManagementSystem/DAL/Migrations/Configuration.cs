@@ -39,13 +39,14 @@
             context.Roles.AddOrUpdate(
                  r => r.Reference
                         ,
-              RoleGuest = new Role { Reference = nameof(Role.Roles.Guest), Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = nameof(Role.Roles.Guest) } },
+              new Role { Reference = nameof(Role.Roles.Guest), Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = nameof(Role.Roles.Guest) } },
               new Role { Reference = nameof(Role.Roles.User), Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = nameof(Role.Roles.User) } },
               new Role { Reference = nameof(Role.Roles.Admin), Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = nameof(Role.Roles.Admin) } },
               new Role { Reference = nameof(Role.Roles.Root), Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = nameof(Role.Roles.Root) }, Hidden = true }
             );
 
-
+            // in First Update-DataBase Root user dont take root Role
+            // When I remove Root user, after Update-DataBase the user root take root role
             RoleRoot = context.Set<Role>().Where(r => r.Reference == nameof(Role.Roles.Root)).SingleOrDefault();
             RoleGuest = context.Set<Role>().Where(r => r.Reference == nameof(Role.Roles.Guest)).SingleOrDefault();
             // Giwn Users
