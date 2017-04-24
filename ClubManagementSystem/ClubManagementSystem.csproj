@@ -44,10 +44,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Gwin Library\GwinApp.dll</HintPath>
     </Reference>
-    <Reference Include="GwinField, Version=0.0.0.3, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Gwin Library\GwinField.dll</HintPath>
-    </Reference>
     <Reference Include="LinqKit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bc217f8844052a91, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Gwin Library\LinqKit.dll</HintPath>
@@ -71,6 +67,7 @@
     <Compile Include="BAL\Class1.cs" />
     <Compile Include="BAL\GroupAgeBLO.cs" />
     <Compile Include="BAL\Security\RoleBAO.cs" />
+    <Compile Include="DAL\LovalDB.cs" />
     <Compile Include="DAL\Migrations\201704141031304_InitDataBase.cs" />
     <Compile Include="DAL\Migrations\201704141031304_InitDataBase.Designer.cs">
       <DependentUpon>201704141031304_InitDataBase.cs</DependentUpon>

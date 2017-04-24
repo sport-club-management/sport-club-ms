@@ -1,5 +1,6 @@
 ﻿namespace App
 {
+    using App.DAL;
     using App.Gwin.Entities.Logging;
     using App.Gwin.Entities.Secrurity.Authentication;
     using App.Gwin.Entities.Secrurity.Autorizations;
@@ -7,6 +8,7 @@
     using ClubManagement.Entities;
     using Gwin.Entities.Application;
     using Gwin.Entities.ContactInformations;
+   
     using System;
     using System.Collections.Generic;
     using System.Data.Entity;
@@ -15,8 +17,15 @@
     public class ModelContext : DbContext
     {
  
-        public ModelContext() : base(@"data source=(LocalDb)\MSSQLLocalDB;initial catalog=SportClubManagement;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework")
+        //public ModelContext() : base(@"data source=(LocalDb)\MSSQLLocalDB;initial catalog=SportClubManagement;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework")
+        //{
+        //    Database.SetInitializer<ModelContext>(new CreateDatabaseIfNotExists<ModelContext>());
+
+        //}
+
+        public ModelContext() : base(LocalDB.GetLocalDBConnectionString("SportClubManagement"))
         {
+           // Database.SetInitializer<ModelContext>(new CreateDatabaseIfNotExists<ModelContext>());
 
         }
 

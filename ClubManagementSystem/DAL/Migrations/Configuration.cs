@@ -20,8 +20,10 @@
 
         protected override void Seed(App.ModelContext context)
         {
-
-            //Gwin Application Name
+            // -------------------------------------
+            // Giwn App V 0.08
+            // -------------------------------------
+            //-- Gwin Application Name
             context.ApplicationNames.AddOrUpdate(
                            r => r.Reference
                         ,
@@ -33,9 +35,13 @@
 
                       );
 
-            // Gwin  Roles
+
+            //
+            // Gwin Roles
+            //
             Role RoleGuest = null;
             Role RoleRoot = null;
+            Role RoleAdmin = null;
             context.Roles.AddOrUpdate(
                  r => r.Reference
                         ,
@@ -44,21 +50,46 @@
               new Role { Reference = nameof(Role.Roles.Admin), Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = nameof(Role.Roles.Admin) } },
               new Role { Reference = nameof(Role.Roles.Root), Name = new Gwin.Entities.MultiLanguage.LocalizedString() { Current = nameof(Role.Roles.Root) }, Hidden = true }
             );
+            // Save Change to Select RoleRoot and RoleGuest
+            context.SaveChanges();
+            RoleRoot = context.Roles.Where(r => r.Reference == nameof(Role.Roles.Root)).SingleOrDefault();
+            RoleGuest = context.Roles.Where(r => r.Reference == nameof(Role.Roles.Guest)).SingleOrDefault();
+            RoleAdmin = context.Roles.Where(r => r.Reference == nameof(Role.Roles.Admin)).SingleOrDefault();
 
-            // in First Update-DataBase Root user dont take root Role
-            // When I remove Root user, after Update-DataBase the user root take root role
-            RoleRoot = context.Set<Role>().Where(r => r.Reference == nameof(Role.Roles.Root)).SingleOrDefault();
-            RoleGuest = context.Set<Role>().Where(r => r.Reference == nameof(Role.Roles.Guest)).SingleOrDefault();
-            // Giwn Users
+            // 
+            // Giwn Autorizations
+            //
+            Authorization FindUserAutorization = new Authorization();
+            FindUserAutorization.BusinessEntity = typeof(User).FullName;
+            FindUserAutorization.ActionsNames = new List<string>();
+            FindUserAutorization.ActionsNames.Add(nameof(IGwinBaseBLO.Recherche));
+
+            Authorization UserAutorization = new Authorization();
+            UserAutorization.BusinessEntity = typeof(User).FullName;
+
+            RoleGuest.Authorizations = new List<Authorization>();
+            RoleGuest.Authorizations.Add(FindUserAutorization);
+
+            RoleAdmin.Authorizations = new List<Authorization>();
+            RoleAdmin.Authorizations.Add(UserAutorization);
+            context.SaveChanges();
+
+            // Admin Autorizations
+            Authorization AdminAutorization = new Authorization();
+            UserAutorization.BusinessEntity = typeof(User).FullName;
+
+            RoleAdmin.Authorizations = new List<Authorization>();
+            RoleAdmin.Authorizations.Add(UserAutorization);
+            context.SaveChanges();
+
+            //-- Giwn Users
             context.Users.AddOrUpdate(
                 u => u.Reference,
-                new User() { Reference = nameof(User.Users.Root), Login = "root", Password = "root", LastName = new LocalizedString() { Current = nameof(User.Users.Root) }, Roles = new List<Role>() { RoleRoot } },
-                  new User() { Reference = nameof(User.Users.Guest), Login = nameof(User.Users.Guest), Password = nameof(User.Users.Guest), LastName = new LocalizedString() { Current = nameof(User.Users.Guest) }, Roles = new List<Role>() { RoleGuest } }
+                new User() { Reference = nameof(User.Users.Root), Login = nameof(User.Users.Root), Password = nameof(User.Users.Root), LastName = new LocalizedString() { Current = nameof(User.Users.Root) }, Roles = new List<Role>() { RoleRoot } },
+                new User() { Reference = nameof(User.Users.Admin), Login = nameof(User.Users.Admin), Password = nameof(User.Users.Admin), LastName = new LocalizedString() { Current = nameof(User.Users.Admin) }, Roles = new List<Role>() { RoleAdmin } },
+                new User() { Reference = nameof(User.Users.Guest), Login = nameof(User.Users.Guest), Password = nameof(User.Users.Guest), LastName = new LocalizedString() { Current = nameof(User.Users.Guest) }, Roles = new List<Role>() { RoleGuest } }
                 );
-
-
-
-            // Gwin  Menu
+            //-- Gwin  Menu
             context.MenuItemApplications.AddOrUpdate(
                             r => r.Code
                          ,
@@ -66,7 +97,10 @@
                          new MenuItemApplication { Id = 2, Code = "Admin", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير البرنامج", English = "Admin", French = "Administration" } },
                          new MenuItemApplication { Id = 3, Code = "Root", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "مصمم اليرنامج", English = "Application Constructor", French = "Rélisateur de l'application" } }
                        );
-
+            
+            //---------------------------------------------------------
+            // Sport Club Management System
+            //---------------------------------------------------------
         }
     }
 }
