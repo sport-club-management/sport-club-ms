@@ -109,12 +109,65 @@
             // Sport Club Management System
             //---------------------------------------------------------
 
+            // 
             // Admin Autorization
+            //
             Authorization GroupAgeAutorization = new Authorization();
             GroupAgeAutorization.BusinessEntity = typeof(GroupAge).FullName;
             RoleAdmin.Authorizations.Add(GroupAgeAutorization);
-
             context.SaveChanges();
+
+            Authorization EducationLevelAutorization = new Authorization();
+            EducationLevelAutorization.BusinessEntity = typeof(EducationLevel).FullName;
+            RoleAdmin.Authorizations.Add(EducationLevelAutorization);
+            context.SaveChanges();
+
+            // GroupeAge Data
+            context.GroupAges.AddOrUpdate(
+                            r => r.Reference
+                         ,
+             new GroupAge()
+             {
+                 Reference = "Small",
+                 SmallestYear = 7,
+                 LargestYear = 11,
+                 NameOfCategory = new LocalizedString() { Arab = "صغار", English = "Small", French = "Petit" }
+             },
+            
+              new GroupAge()
+              {
+                  Reference = "Boys",
+                  SmallestYear = 12,
+                  LargestYear = 14,
+                  NameOfCategory = new LocalizedString() { Arab = "فتيان", English = "Boys", French = "Garçons" }
+              },
+               new GroupAge()
+               {
+                   Reference = "Young",
+                   SmallestYear = 15,
+                   LargestYear = 17,
+                   NameOfCategory = new LocalizedString() { Arab = "شباب", English = "Young", French = "Jeunes" }
+               },
+               new GroupAge()
+               {
+                   Reference = "Senior",
+                   SmallestYear = 18,
+                   LargestYear = 100,
+                   NameOfCategory = new LocalizedString() { Arab = "كبار", English = "Senior", French = "Supérieur" }
+               }
+              
+
+             );
+            //Education Level data
+            //context.EducationLevels.AddOrUpdate(
+            //               r => r.Reference,
+            //               new EducationLevel()
+            //               {
+            //                   Name = "Primary",
+
+
+            //               }
+
         }
     }
 }

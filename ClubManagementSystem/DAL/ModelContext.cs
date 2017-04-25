@@ -49,6 +49,7 @@
 
         // Club Management System
         public virtual DbSet<GroupAge> GroupAges { get; set; }
+        public virtual DbSet<EducationLevel> EducationLevels { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
