@@ -49,7 +49,7 @@
 
         // Club Management System
         public virtual DbSet<GroupAge> GroupAges { get; set; }
-
+        public virtual DbSet<TournamentCategory> TournamentCategories { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
