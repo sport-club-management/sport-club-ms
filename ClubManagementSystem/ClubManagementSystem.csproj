@@ -64,24 +64,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BAL\BaseBLO.cs" />
-    <Compile Include="BAL\Class1.cs" />
-    <Compile Include="BAL\GroupAgeBLO.cs" />
     <Compile Include="BAL\Security\RoleBAO.cs" />
+    <Compile Include="BAL\UserBLO.cs" />
     <Compile Include="DAL\LovalDB.cs" />
-    <Compile Include="DAL\Migrations\201704141031304_InitDataBase.cs" />
-    <Compile Include="DAL\Migrations\201704141031304_InitDataBase.Designer.cs">
-      <DependentUpon>201704141031304_InitDataBase.cs</DependentUpon>
-    </Compile>
     <Compile Include="DAL\Configuration.cs" />
     <Compile Include="DAL\ModelContext.cs" />
     <Compile Include="Entities\GroupAge.cs" />
     <Compile Include="Entities\Resources\GroupAge\GroupAge.ar.Designer.cs">
       <DependentUpon>GroupAge.ar.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="Entities\Resources\GroupAge\GroupAge.en.Designer.cs">
-      <DependentUpon>GroupAge.en.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -107,10 +97,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>GroupAge.ar.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entities\Resources\GroupAge\GroupAge.en.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>GroupAge.en.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Entities\Resources\GroupAge\GroupAge.fr.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>GroupAge.fr.Designer.cs</LastGenOutput>
@@ -124,9 +110,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuApplication.resx">
       <DependentUpon>FormMenuApplication.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DAL\Migrations\201704141031304_InitDataBase.resx">
-      <DependentUpon>201704141031304_InitDataBase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -154,7 +137,9 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -16,18 +16,18 @@
 
     public class ModelContext : DbContext
     {
- 
-        //public ModelContext() : base(@"data source=(LocalDb)\MSSQLLocalDB;initial catalog=SportClubManagement;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework")
-        //{
-        //    Database.SetInitializer<ModelContext>(new CreateDatabaseIfNotExists<ModelContext>());
 
-        //}
-
-        public ModelContext() : base(LocalDB.GetLocalDBConnectionString("SportClubManagement"))
+        public ModelContext() : base(@"data source=(LocalDb)\MSSQLLocalDB;initial catalog=SportClubManagement;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework")
         {
-           // Database.SetInitializer<ModelContext>(new CreateDatabaseIfNotExists<ModelContext>());
+            Database.SetInitializer<ModelContext>(new CreateDatabaseIfNotExists<ModelContext>());
 
         }
+
+        //public ModelContext() : base(LocalDB.GetLocalDBConnectionString("SportClubManagement"))
+        //{
+        //   // Database.SetInitializer<ModelContext>(new CreateDatabaseIfNotExists<ModelContext>());
+
+        //}
 
         public ModelContext(string connectionString):base(connectionString)
         {

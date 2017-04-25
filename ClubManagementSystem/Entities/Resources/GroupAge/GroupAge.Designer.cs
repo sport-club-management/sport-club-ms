@@ -61,25 +61,34 @@ namespace ClubManagement.Entities.Resources.GroupAge {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à أكبر سنة.
+        ///   Recherche une chaîne localisée semblable à Largest year.
         /// </summary>
-        internal static string Oldes_tAge {
+        internal static string LargestYear {
             get {
-                return ResourceManager.GetString("Oldes_tAge", resourceCulture);
+                return ResourceManager.GetString("LargestYear", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à الفئات العمرية.
+        ///   Recherche une chaîne localisée semblable à Name of category.
         /// </summary>
-        internal static string PluraleName {
+        internal static string NameOfCategory {
             get {
-                return ResourceManager.GetString("PluraleName", resourceCulture);
+                return ResourceManager.GetString("NameOfCategory", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à الفئة العمرية.
+        ///   Recherche une chaîne localisée semblable à Age Groups.
+        /// </summary>
+        internal static string PluralName {
+            get {
+                return ResourceManager.GetString("PluralName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Age Group.
         /// </summary>
         internal static string SingularName {
             get {
@@ -88,20 +97,11 @@ namespace ClubManagement.Entities.Resources.GroupAge {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à إسم الصنف.
+        ///   Recherche une chaîne localisée semblable à Smallest year.
         /// </summary>
-        internal static string Type_Name {
+        internal static string SmallestYear {
             get {
-                return ResourceManager.GetString("Type_Name", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Recherche une chaîne localisée semblable à أصغر سنة.
-        /// </summary>
-        internal static string Youngest_Age {
-            get {
-                return ResourceManager.GetString("Youngest_Age", resourceCulture);
+                return ResourceManager.GetString("SmallestYear", resourceCulture);
             }
         }
     }

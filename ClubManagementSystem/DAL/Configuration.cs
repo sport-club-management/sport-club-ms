@@ -1,9 +1,11 @@
 ﻿namespace App.Migrations
 {
     using App.Gwin.Entities.Application;
+    using App.Gwin.Entities.ContactInformations;
     using App.Gwin.Entities.MultiLanguage;
     using App.Gwin.Entities.Secrurity.Authentication;
     using App.Gwin.Entities.Secrurity.Autorizations;
+    using ClubManagement.Entities;
     using Gwin;
     using Gwin.Application.BAL;
     using System.Collections.Generic;
@@ -14,8 +16,8 @@
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
-            ContextKey = "ClubManagementSystem";
+            AutomaticMigrationsEnabled = true;
+            ContextKey = "SportClubManagement";
         }
 
         protected override void Seed(App.ModelContext context)
@@ -59,27 +61,32 @@
             // 
             // Giwn Autorizations
             //
+            // Guest Autorization
             Authorization FindUserAutorization = new Authorization();
             FindUserAutorization.BusinessEntity = typeof(User).FullName;
             FindUserAutorization.ActionsNames = new List<string>();
             FindUserAutorization.ActionsNames.Add(nameof(IGwinBaseBLO.Recherche));
 
-            Authorization UserAutorization = new Authorization();
-            UserAutorization.BusinessEntity = typeof(User).FullName;
-
             RoleGuest.Authorizations = new List<Authorization>();
             RoleGuest.Authorizations.Add(FindUserAutorization);
 
+            // Admin Autorization
             RoleAdmin.Authorizations = new List<Authorization>();
-            RoleAdmin.Authorizations.Add(UserAutorization);
-            context.SaveChanges();
 
-            // Admin Autorizations
-            Authorization AdminAutorization = new Authorization();
+            Authorization UserAutorization = new Authorization();
             UserAutorization.BusinessEntity = typeof(User).FullName;
-
-            RoleAdmin.Authorizations = new List<Authorization>();
             RoleAdmin.Authorizations.Add(UserAutorization);
+
+
+            Authorization CityAutorization = new Authorization();
+            CityAutorization.BusinessEntity = typeof(City).FullName;
+            RoleAdmin.Authorizations.Add(CityAutorization);
+
+
+            Authorization CountryAutorization = new Authorization();
+            CountryAutorization.BusinessEntity = typeof(Country).FullName;
+            RoleAdmin.Authorizations.Add(CountryAutorization);
+
             context.SaveChanges();
 
             //-- Giwn Users
@@ -97,10 +104,17 @@
                          new MenuItemApplication { Id = 2, Code = "Admin", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير البرنامج", English = "Admin", French = "Administration" } },
                          new MenuItemApplication { Id = 3, Code = "Root", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "مصمم اليرنامج", English = "Application Constructor", French = "Rélisateur de l'application" } }
                        );
-            
+
             //---------------------------------------------------------
             // Sport Club Management System
             //---------------------------------------------------------
+
+            // Admin Autorization
+            Authorization GroupAgeAutorization = new Authorization();
+            GroupAgeAutorization.BusinessEntity = typeof(GroupAge).FullName;
+            RoleAdmin.Authorizations.Add(GroupAgeAutorization);
+
+            context.SaveChanges();
         }
     }
 }
