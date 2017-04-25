@@ -72,7 +72,7 @@
     <Compile Include="DAL\Migrations\201704141031304_InitDataBase.Designer.cs">
       <DependentUpon>201704141031304_InitDataBase.cs</DependentUpon>
     </Compile>
-    <Compile Include="DAL\Migrations\Configuration.cs" />
+    <Compile Include="DAL\Configuration.cs" />
     <Compile Include="DAL\ModelContext.cs" />
     <Compile Include="Entities\GroupAge.cs" />
     <Compile Include="Entities\Resources\GroupAge\GroupAge.ar.Designer.cs">
