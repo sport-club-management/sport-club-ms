@@ -17,12 +17,13 @@
     public class ModelContext : DbContext
     {
         //(LocalDb)\MSSQLLocalDB
-        public ModelContext() : base(@"data source=.\SQLEXPRESS;initial catalog=SportClubManagement;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework")
+        public ModelContext() : base(@"data source=(LocalDb)\MSSQLLocalDB;initial catalog=SportClubManagement;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework")
         {
-            Database.SetInitializer<ModelContext>(new CreateDatabaseIfNotExists<ModelContext>());
+          //  Database.SetInitializer<ModelContext>(new CreateDatabaseIfNotExists<ModelContext>());
 
         }
 
+       
         //public ModelContext() : base(LocalDB.GetLocalDBConnectionString("SportClubManagement"))
         //{
         //   // Database.SetInitializer<ModelContext>(new CreateDatabaseIfNotExists<ModelContext>());
