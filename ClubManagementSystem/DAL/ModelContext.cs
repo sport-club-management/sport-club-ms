@@ -57,6 +57,9 @@
         public virtual DbSet<TournamentCategory> TournamentCategories { get; set; }
 
 
+        public virtual DbSet<ChampionshipRanking> ChampionshipRanking { get; set; }
+
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
            
