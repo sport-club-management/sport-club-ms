@@ -87,6 +87,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GroupAge.resx</DependentUpon>
     </Compile>
+    <Compile Include="Entities\Resources\TournamentCategory\TournamentCategory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TournamentCategory.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\TournamentCategory.cs" />
     <Compile Include="FormMenuApplication.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,12 @@
     <EmbeddedResource Include="Entities\Resources\GroupAge\GroupAge.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>GroupAge.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\TournamentCategory\TournamentCategory.ar.resx" />
+    <EmbeddedResource Include="Entities\Resources\TournamentCategory\TournamentCategory.fr.resx" />
+    <EmbeddedResource Include="Entities\Resources\TournamentCategory\TournamentCategory.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TournamentCategory.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuApplication.ar.resx">
       <DependentUpon>FormMenuApplication.cs</DependentUpon>

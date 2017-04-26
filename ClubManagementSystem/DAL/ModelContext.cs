@@ -49,8 +49,11 @@
 
         // Club Management System
         public virtual DbSet<GroupAge> GroupAges { get; set; }
+
         public virtual DbSet<Expense> Expenses { get; set; }
         public virtual DbSet<ExpenseCategory> ExpenseCategories { get; set; }
+        public virtual DbSet<TournamentCategory> TournamentCategories { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
