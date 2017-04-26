@@ -23,8 +23,8 @@ namespace GenericWinForm.Demo
         {
             User user = null;
             user = User.CreateGuestUser(new ModelContext());
-           // user = User.CreateAdminUser(new ModelContext());
-           // user = User.CreateRootUser(new ModelContext());
+         //  user = User.CreateAdminUser(new ModelContext());
+          //user = User.CreateRootUser(new ModelContext());
             // Start Gwin Application with Authentification
             GwinApp.Start(typeof(ModelContext), typeof(BaseBLO<>), this, user);
 

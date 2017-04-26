@@ -51,7 +51,7 @@
         // Club Management System
         public virtual DbSet<GroupAge> GroupAges { get; set; }
         public virtual DbSet<EducationLevel> EducationLevels { get; set; }
-
+public virtual DbSet<Belt> Belts { get; set; }
         public virtual DbSet<Expense> Expenses { get; set; }
         public virtual DbSet<ExpenseCategory> ExpenseCategories { get; set; }
         public virtual DbSet<TournamentCategory> TournamentCategories { get; set; }
