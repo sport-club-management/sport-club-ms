@@ -13,8 +13,8 @@ using System.Threading.Tasks;
 
 namespace ClubManagement.Entities
 {
-    [GwinEntity(Localizable = true, DisplayMember = "NameOfCategory")]
-    [Menu(Group = "Configuration")]
+    [GwinEntity(Localizable = true, DisplayMember = "Name")]
+    [Menu(Group = "ExpenseManagement")]
     public class ExpenseCategory: BaseEntity
     {
         public ExpenseCategory()

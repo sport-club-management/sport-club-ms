@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 namespace ClubManagement.Entities
 {
     [GwinEntity(Localizable = true, DisplayMember = "Name")]
-    [Menu(Group = "Configuration")]
+    [Menu(Group = "ExpenseManagement")]
     public class Expense:BaseEntity
     {
         public Expense()
@@ -33,7 +33,7 @@ namespace ClubManagement.Entities
 
         [EntryForm]
         [DataGrid]
-       // [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToOne)]
         public ExpenseCategory ExpenseCategory { get; set; }
     }
 }

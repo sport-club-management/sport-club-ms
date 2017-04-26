@@ -70,6 +70,8 @@
     <Compile Include="DAL\Configuration.cs" />
     <Compile Include="DAL\ModelContext.cs" />
     <Compile Include="Entities\EducationLevel.cs" />
+    <Compile Include="Entities\Expense.cs" />
+    <Compile Include="Entities\ExpenseCategory.cs" />
     <Compile Include="Entities\GroupAge.cs" />
     <Compile Include="Entities\Resources\EducationLevel\EducationLevel.ar.Designer.cs" />
     <Compile Include="Entities\Resources\EducationLevel\EducationLevel.Designer.cs" />
@@ -89,6 +91,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>GroupAge.resx</DependentUpon>
     </Compile>
+    <Compile Include="Entities\Resources\TournamentCategory\TournamentCategory.Designer.cs" />
+    <Compile Include="Entities\TournamentCategory.cs" />
     <Compile Include="FormMenuApplication.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +104,12 @@
     <EmbeddedResource Include="Entities\Resources\EducationLevel\EducationLevel.ar.resx" />
     <EmbeddedResource Include="Entities\Resources\EducationLevel\EducationLevel.fr.resx" />
     <EmbeddedResource Include="Entities\Resources\EducationLevel\EducationLevel.resx" />
+    <EmbeddedResource Include="Entities\Resources\ExpenseCategory\ExpenseCategory.ar.resx" />
+    <EmbeddedResource Include="Entities\Resources\ExpenseCategory\ExpenseCategory.fr.resx" />
+    <EmbeddedResource Include="Entities\Resources\ExpenseCategory\ExpenseCategory.resx" />
+    <EmbeddedResource Include="Entities\Resources\Expense\Expense.ar.resx" />
+    <EmbeddedResource Include="Entities\Resources\Expense\Expense.fr.resx" />
+    <EmbeddedResource Include="Entities\Resources\Expense\Expense.resx" />
     <EmbeddedResource Include="Entities\Resources\GroupAge\GroupAge.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>GroupAge.ar.Designer.cs</LastGenOutput>
@@ -112,6 +122,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>GroupAge.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\TournamentCategory\TournamentCategory.ar.resx" />
+    <EmbeddedResource Include="Entities\Resources\TournamentCategory\TournamentCategory.fr.resx" />
+    <EmbeddedResource Include="Entities\Resources\TournamentCategory\TournamentCategory.resx" />
     <EmbeddedResource Include="FormMenuApplication.ar.resx">
       <DependentUpon>FormMenuApplication.cs</DependentUpon>
     </EmbeddedResource>
