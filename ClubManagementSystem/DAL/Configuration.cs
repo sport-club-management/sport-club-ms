@@ -129,6 +129,27 @@
             context.SaveChanges();
 
 
+
+
+            Authorization BeltAutorization = new Authorization();
+            BeltAutorization.BusinessEntity = typeof(Belt).FullName;
+            RoleAdmin.Authorizations.Add(BeltAutorization);
+
+
+            // Belt Data
+            context.Belts.AddOrUpdate(
+                           r => r.Reference
+                        ,
+            new Belt()
+            {
+                Description = "descA",
+                levelofThebelt = "levA",
+                NameofTheBelt = new LocalizedString() { English = "Name", French = "Nom" ,Arab= "إسم الخزام" },
+                //  Description = new LocalizedString() { English = "Description", French = "Description" },
+                //levelofThebelt = new LocalizedString() { English = "Name", French = "Nom" }
+            });
+
+
             Authorization EducationLevelAutorization = new Authorization();
             EducationLevelAutorization.BusinessEntity = typeof(EducationLevel).FullName;
             RoleAdmin.Authorizations.Add(EducationLevelAutorization);
