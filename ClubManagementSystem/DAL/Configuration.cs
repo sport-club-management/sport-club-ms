@@ -81,6 +81,13 @@
             RoleAdmin.Authorizations.Add(UserAutorization);
 
 
+           //ChampionshipRanking
+
+            Authorization ChampionshipRankingAutorization = new Authorization();
+            CityAutorization.BusinessEntity = typeof(ChampionshipRanking).FullName;
+            RoleAdmin.Authorizations.Add(ChampionshipRankingAutorization);
+            //
+
             Authorization CityAutorization = new Authorization();
             CityAutorization.BusinessEntity = typeof(City).FullName;
             RoleAdmin.Authorizations.Add(CityAutorization);
@@ -89,6 +96,8 @@
             Authorization CountryAutorization = new Authorization();
             CountryAutorization.BusinessEntity = typeof(Country).FullName;
             RoleAdmin.Authorizations.Add(CountryAutorization);
+
+
 
             context.SaveChanges();
 
