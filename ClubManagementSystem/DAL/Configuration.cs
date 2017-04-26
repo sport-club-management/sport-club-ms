@@ -104,6 +104,14 @@
                          new MenuItemApplication { Id = 2, Code = "Admin", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "تدبير البرنامج", English = "Admin", French = "Administration" } },
                          new MenuItemApplication { Id = 3, Code = "Root", Title = new Gwin.Entities.MultiLanguage.LocalizedString { Arab = "مصمم اليرنامج", English = "Application Constructor", French = "Rélisateur de l'application" } }
                        );
+            //-- Tournament Categories Data
+            context.TournamentCategories.AddOrUpdate(
+                            r => r.Reference,
+                            new TournamentCategory { Reference="Local", CategoryName=new LocalizedString { Arab=" محلي",French="Local",English="Local"} },
+                            new TournamentCategory { Reference="Regional", CategoryName=new LocalizedString { Arab=" جهوي",French="Régional",English="Regional"} },
+                            new TournamentCategory { Reference="National", CategoryName=new LocalizedString { Arab=" وطني",French="National",English="National"} },
+                            new TournamentCategory { Reference="International", CategoryName=new LocalizedString { Arab=" دولي",French="International",English="International"} }
+                );
 
             //---------------------------------------------------------
             // Sport Club Management System
@@ -117,9 +125,29 @@
             RoleAdmin.Authorizations.Add(GroupAgeAutorization);
             context.SaveChanges();
 
+
             Authorization EducationLevelAutorization = new Authorization();
             EducationLevelAutorization.BusinessEntity = typeof(EducationLevel).FullName;
             RoleAdmin.Authorizations.Add(EducationLevelAutorization);
+
+            Authorization TournamentCategoryAuthorisation = new Authorization();
+            TournamentCategoryAuthorisation.BusinessEntity = typeof(TournamentCategory).FullName;
+            RoleAdmin.Authorizations.Add(TournamentCategoryAuthorisation);
+
+            context.SaveChanges();
+
+
+
+            //
+            Authorization ExpensesAuthorization = new Authorization();
+            ExpensesAuthorization.BusinessEntity = typeof(Expense).FullName;
+            RoleAdmin.Authorizations.Add(ExpensesAuthorization);
+            context.SaveChanges();
+            //
+            Authorization ExpensesCategoryAuthorization = new Authorization();
+            ExpensesCategoryAuthorization.BusinessEntity = typeof(ExpenseCategory).FullName;
+            RoleAdmin.Authorizations.Add(ExpensesCategoryAuthorization);
+
             context.SaveChanges();
 
             // GroupeAge Data
