@@ -127,6 +127,19 @@
             RoleAdmin.Authorizations.Add(TournamentCategoryAuthorisation);
 
             context.SaveChanges();
+
+
+
+            //
+            Authorization ExpensesAuthorization = new Authorization();
+            ExpensesAuthorization.BusinessEntity = typeof(Expense).FullName;
+            RoleAdmin.Authorizations.Add(ExpensesAuthorization);
+            context.SaveChanges();
+            //
+            Authorization ExpensesCategoryAuthorization = new Authorization();
+            ExpensesCategoryAuthorization.BusinessEntity = typeof(ExpenseCategory).FullName;
+            RoleAdmin.Authorizations.Add(ExpensesCategoryAuthorization);
+            context.SaveChanges();
         }
     }
 }
