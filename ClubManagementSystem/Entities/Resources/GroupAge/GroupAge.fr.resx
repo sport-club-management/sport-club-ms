@@ -117,19 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Oldest_Age" xml:space="preserve">
-    <value>Oldest Age</value>
+  <data name="LargestYear" xml:space="preserve">
+    <value>Année maximum</value>
+  </data>
+  <data name="NameOfCategory" xml:space="preserve">
+    <value>Nom de la classe d'age</value>
   </data>
   <data name="PluralName" xml:space="preserve">
-    <value>Age groups</value>
+    <value>Catégories d'age</value>
   </data>
   <data name="SingularName" xml:space="preserve">
-    <value>Age group</value>
+    <value>Catégorie d'age</value>
   </data>
-  <data name="Type_Name" xml:space="preserve">
-    <value>Type Name</value>
-  </data>
-  <data name="Youngest_Age" xml:space="preserve">
-    <value>Youngest Age</value>
+  <data name="SmallestYear" xml:space="preserve">
+    <value>Année minimum</value>
   </data>
 </root>

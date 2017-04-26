@@ -1,5 +1,7 @@
 ﻿using App.Gwin.Attributes;
 using App.Gwin.Entities;
+using App.Gwin.Entities.Application;
+using App.Gwin.Entities.MultiLanguage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,22 +14,27 @@ namespace ClubManagement.Entities
     /// <summary>
     /// الفئة العمرية
     /// </summary>
-    [DisplayEntity(Localizable = true,DisplayMember = "Type_Name")]
-    [Menu]
+    [GwinEntity(Localizable = true, DisplayMember = "NameOfCategory")]
+    [Menu(Group = "Configuration")]
     public class GroupAge : BaseEntity
     {
-        [DisplayProperty(Titre ="Type_Name")]
+
+        public GroupAge()
+        {
+            this.NameOfCategory = new LocalizedString();
+        }
+
         [EntryForm]
         [DataGrid]
         [Filter]
-        public string Type_Name { get; set; }
-        [DisplayProperty(Titre ="YoungestAge")]
+        public LocalizedString NameOfCategory { get; set; }
+
         [EntryForm]
         [DataGrid]
-        public string Youngest_Age { get; set; }
-        [DisplayProperty(Titre ="OldestAge")]
+        public int SmallestYear { get; set; }
+
         [EntryForm]
         [DataGrid]
-        public string Oldest_Age { get; set; }
+        public int LargestYear { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using App.Gwin.Entities.Security;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using App.Gwin.Entities;
 using System.Windows.Forms;
+using ClubManagement.BAL;
+using App.Gwin.Entities.Secrurity.Autorizations;
 
 namespace App.Gwin.Application.BAL.Security
 {
@@ -26,7 +28,7 @@ namespace App.Gwin.Application.BAL.Security
                 // Business Role : the role name mut be UperCase
                 case nameof(role.Name): 
                     {
-                        role.Name = role.Name.ToUpper();
+                        role.Name.Current = role.Name.Current.ToUpper();
                     }
                     break;
             }
