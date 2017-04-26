@@ -69,6 +69,8 @@
     <Compile Include="DAL\LovalDB.cs" />
     <Compile Include="DAL\Configuration.cs" />
     <Compile Include="DAL\ModelContext.cs" />
+    <Compile Include="Entities\Expense.cs" />
+    <Compile Include="Entities\ExpenseCategory.cs" />
     <Compile Include="Entities\GroupAge.cs" />
     <Compile Include="Entities\Resources\GroupAge\GroupAge.ar.Designer.cs">
       <DependentUpon>GroupAge.ar.resx</DependentUpon>
@@ -91,8 +93,22 @@
     <Compile Include="FormMenuApplication.Designer.cs">
       <DependentUpon>FormMenuApplication.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704260157174_Create_data.cs" />
+    <Compile Include="Migrations\201704260157174_Create_data.Designer.cs">
+      <DependentUpon>201704260157174_Create_data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201704260200163_Create_Expense_ExpenseCategory_table.cs" />
+    <Compile Include="Migrations\201704260200163_Create_Expense_ExpenseCategory_table.Designer.cs">
+      <DependentUpon>201704260200163_Create_Expense_ExpenseCategory_table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Entities\Resources\ExpenseCategory\ExpenseCategory.ar.resx" />
+    <EmbeddedResource Include="Entities\Resources\ExpenseCategory\ExpenseCategory.fr.resx" />
+    <EmbeddedResource Include="Entities\Resources\ExpenseCategory\ExpenseCategory.resx" />
+    <EmbeddedResource Include="Entities\Resources\Expense\Expense.ar.resx" />
+    <EmbeddedResource Include="Entities\Resources\Expense\Expense.fr.resx" />
+    <EmbeddedResource Include="Entities\Resources\Expense\Expense.resx" />
     <EmbeddedResource Include="Entities\Resources\GroupAge\GroupAge.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>GroupAge.ar.Designer.cs</LastGenOutput>
@@ -110,6 +126,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenuApplication.resx">
       <DependentUpon>FormMenuApplication.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704260157174_Create_data.resx">
+      <DependentUpon>201704260157174_Create_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704260200163_Create_Expense_ExpenseCategory_table.resx">
+      <DependentUpon>201704260200163_Create_Expense_ExpenseCategory_table.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -137,9 +159,7 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Migrations\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

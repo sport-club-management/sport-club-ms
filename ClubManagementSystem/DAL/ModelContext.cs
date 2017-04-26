@@ -16,8 +16,8 @@
 
     public class ModelContext : DbContext
     {
-
-        public ModelContext() : base(@"data source=(LocalDb)\MSSQLLocalDB;initial catalog=SportClubManagement;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework")
+        //(LocalDb)\MSSQLLocalDB
+        public ModelContext() : base(@"data source=.\SQLEXPRESS;initial catalog=SportClubManagement;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework")
         {
             Database.SetInitializer<ModelContext>(new CreateDatabaseIfNotExists<ModelContext>());
 
@@ -49,7 +49,8 @@
 
         // Club Management System
         public virtual DbSet<GroupAge> GroupAges { get; set; }
-
+        public virtual DbSet<Expense> Expenses { get; set; }
+        public virtual DbSet<ExpenseCategory> ExpenseCategories { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
