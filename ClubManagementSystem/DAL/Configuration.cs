@@ -14,6 +14,9 @@
 
     public sealed class Configuration : DbMigrationsConfiguration<ModelContext>
     {
+        /// <summary>
+        /// Configuration
+        /// </summary>
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
