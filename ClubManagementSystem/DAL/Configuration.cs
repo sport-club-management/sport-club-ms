@@ -84,7 +84,7 @@
            //ChampionshipRanking
 
             Authorization ChampionshipRankingAutorization = new Authorization();
-            CityAutorization.BusinessEntity = typeof(ChampionshipRanking).FullName;
+            ChampionshipRankingAutorization.BusinessEntity = typeof(ChampionshipRanking).FullName;
             RoleAdmin.Authorizations.Add(ChampionshipRankingAutorization);
             //
 
@@ -220,14 +220,37 @@
 
              );
             //Education Level data
-            //context.EducationLevels.AddOrUpdate(
-            //               r => r.Reference,
-            //               new EducationLevel()
-            //               {
-            //                   Name = "Primary",
+            context.EducationLevels.AddOrUpdate(
+                         r => r.Reference,
+                         new EducationLevel()
+                         {
+                             Reference = "Primary",
+                             Name = new LocalizedString() { Arab = "التعليم الإبتدائي",English= "Primary education",French= "l'enseignement primaire" },
+                             Description="Empty"
 
+                         },
+                           new EducationLevel()
+                           {
+                              Reference = "Secondary",
+                              Name = new LocalizedString() { Arab = "التعليم الإعدادي", English = "Secondary education", French = "éducation préparatoire" },
+                              Description = "Empty"
 
-            //               }
+                         },
+                            new EducationLevel()
+                            {
+                                Reference = "high school",
+                                Name = new LocalizedString() { Arab = "التعليم الإعدادي", English = "high school", French = "lycée" },
+                                Description = "Empty"
+
+                            },
+                                  new EducationLevel()
+                                  {
+                                      Reference = "University",
+                                      Name = new LocalizedString() { Arab = "التعليم الجامعي", English = "University", French = "Université" },
+                                      Description = "Empty"
+
+                                  }
+                         );
 
         }
     }
