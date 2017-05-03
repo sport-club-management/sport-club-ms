@@ -8,7 +8,7 @@
     using ClubManagement.Entities;
     using Gwin.Entities.Application;
     using Gwin.Entities.ContactInformations;
-   
+
     using System;
     using System.Collections.Generic;
     using System.Data.Entity;
@@ -19,18 +19,18 @@
         //(LocalDb)\MSSQLLocalDB
         public ModelContext() : base(@"data source=(LocalDb)\MSSQLLocalDB;initial catalog=SportClubManagement;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework")
         {
-          //  Database.SetInitializer<ModelContext>(new CreateDatabaseIfNotExists<ModelContext>());
+            //  Database.SetInitializer<ModelContext>(new CreateDatabaseIfNotExists<ModelContext>());
 
         }
 
-       
+
         //public ModelContext() : base(LocalDB.GetLocalDBConnectionString("SportClubManagement"))
         //{
         //   // Database.SetInitializer<ModelContext>(new CreateDatabaseIfNotExists<ModelContext>());
 
         //}
 
-        public ModelContext(string connectionString):base(connectionString)
+        public ModelContext(string connectionString) : base(connectionString)
         {
 
         }
@@ -51,18 +51,18 @@
         // Club Management System
         public virtual DbSet<GroupAge> GroupAges { get; set; }
         public virtual DbSet<EducationLevel> EducationLevels { get; set; }
-public virtual DbSet<Belt> Belts { get; set; }
+        public virtual DbSet<Belt> Belts { get; set; }
         public virtual DbSet<Expense> Expenses { get; set; }
         public virtual DbSet<ExpenseCategory> ExpenseCategories { get; set; }
         public virtual DbSet<TournamentCategory> TournamentCategories { get; set; }
 
 
-        public virtual DbSet<ChampionshipRanking> ChampionshipRanking { get; set; }
+        public virtual DbSet<TournamentRanking> TournamentRankings { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-           
+
         }
 
         /// <summary>
@@ -77,7 +77,7 @@ public virtual DbSet<Belt> Belts { get; set; }
 
     }
 
-    
+
 
 
 }
