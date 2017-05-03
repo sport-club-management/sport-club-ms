@@ -69,16 +69,23 @@
     <Compile Include="DAL\LovalDB.cs" />
     <Compile Include="DAL\Configuration.cs" />
     <Compile Include="DAL\ModelContext.cs" />
+
     <Compile Include="Entities\Belt exam.cs" />
     <Compile Include="Entities\Belt.cs" />
     <Compile Include="Entities\ChampionshipRanking.cs" />
+
     <Compile Include="Entities\EducationLevel.cs" />
     <Compile Include="Entities\Expense.cs" />
     <Compile Include="Entities\ExpenseCategory.cs" />
     <Compile Include="Entities\GroupAge.cs" />
+
     <Compile Include="Entities\Incomes.cs" />
     <Compile Include="Entities\InComesCategory.cs" />
     <Compile Include="Entities\Insurances.cs" />
+
+    <Compile Include="Entities\Resources\Belt\Belt.Designer.cs" />
+    <Compile Include="Entities\Resources\Belt\Belt.fr.Designer.cs" />
+
     <Compile Include="Entities\Resources\EducationLevel\EducationLevel.ar.Designer.cs" />
     <Compile Include="Entities\Resources\EducationLevel\EducationLevel.Designer.cs" />
     <Compile Include="Entities\Resources\EducationLevel\EducationLevel.fr.Designer.cs" />
@@ -111,6 +118,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Entities\Resources\Belt\Belt.ar.resx" />
+    <EmbeddedResource Include="Entities\Resources\Belt\Belt.fr.resx" />
+    <EmbeddedResource Include="Entities\Resources\Belt\Belt.resx" />
     <EmbeddedResource Include="Entities\Resources\EducationLevel\EducationLevel.ar.resx" />
     <EmbeddedResource Include="Entities\Resources\EducationLevel\EducationLevel.fr.resx" />
     <EmbeddedResource Include="Entities\Resources\EducationLevel\EducationLevel.resx" />
