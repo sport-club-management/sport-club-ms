@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ClubManagement.Entities.BeltExam">
+    <Position X="9" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Belt exam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClubManagement.Entities.Belt">
+    <Position X="10.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAgAAAAAAAAAAQAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Belt.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BeltExam" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ClubManagement.Entities.ChampionshipRanking">
+    <Position X="4.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Entities\ChampionshipRanking.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClubManagement.Entities.EducationLevel" Collapsed="true">
+    <Position X="9.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\EducationLevel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClubManagement.Entities.Expense" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Expense.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ExpenseCategory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ClubManagement.Entities.ExpenseCategory" Collapsed="true">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\ExpenseCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClubManagement.Entities.GroupAge" Collapsed="true">
+    <Position X="6.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\GroupAge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClubManagement.Entities.Incomes">
+    <Position X="2" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Incomes.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="InComesCategory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ClubManagement.Entities.InComesCategory" Collapsed="true">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\InComesCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClubManagement.Entities.Insurances" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Entities\Insurances.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClubManagement.Entities.Subscription" Collapsed="true">
+    <Position X="3.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Entities\Subscription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClubManagement.Entities.Tournament">
+    <Position X="6.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAQAAAAAABAAAAAADAAAAAA=</HashCode>
+      <FileName>Entities\Tournament.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TournamentCategory" />
+      <Property Name="ChampionshipRanking" />
+      <Property Name="GroupAge" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ClubManagement.Entities.Trainee">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAACAAAAAAAAAQAAAAAAACAAAABAAAAAEAEAAAAEIA=</HashCode>
+      <FileName>Entities\Trainee.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EducationLevel" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Belts" />
+      <Property Name="Weights" />
+      <Property Name="Tournaments" />
+      <Property Name="Subscriptions" />
+      <Property Name="Insurancess" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ClubManagement.Entities.TournamentCategory" Collapsed="true">
+    <Position X="4" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\TournamentCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClubManagement.Entities.Weight" Collapsed="true">
+    <Position X="10.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Entities\Weight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

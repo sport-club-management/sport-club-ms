@@ -69,13 +69,23 @@
     <Compile Include="DAL\LovalDB.cs" />
     <Compile Include="DAL\Configuration.cs" />
     <Compile Include="DAL\ModelContext.cs" />
+
+    <Compile Include="Entities\Belt exam.cs" />
     <Compile Include="Entities\Belt.cs" />
+    <Compile Include="Entities\ChampionshipRanking.cs" />
+
     <Compile Include="Entities\EducationLevel.cs" />
     <Compile Include="Entities\Expense.cs" />
     <Compile Include="Entities\ExpenseCategory.cs" />
     <Compile Include="Entities\GroupAge.cs" />
+
+    <Compile Include="Entities\Incomes.cs" />
+    <Compile Include="Entities\InComesCategory.cs" />
+    <Compile Include="Entities\Insurances.cs" />
+
     <Compile Include="Entities\Resources\Belt\Belt.Designer.cs" />
     <Compile Include="Entities\Resources\Belt\Belt.fr.Designer.cs" />
+
     <Compile Include="Entities\Resources\EducationLevel\EducationLevel.ar.Designer.cs" />
     <Compile Include="Entities\Resources\EducationLevel\EducationLevel.Designer.cs" />
     <Compile Include="Entities\Resources\EducationLevel\EducationLevel.fr.Designer.cs" />
@@ -95,7 +105,11 @@
       <DependentUpon>GroupAge.resx</DependentUpon>
     </Compile>
     <Compile Include="Entities\Resources\TournamentCategory\TournamentCategory.Designer.cs" />
+    <Compile Include="Entities\Subscription.cs" />
+    <Compile Include="Entities\Tournament.cs" />
     <Compile Include="Entities\TournamentCategory.cs" />
+    <Compile Include="Entities\Trainee.cs" />
+    <Compile Include="Entities\Weight.cs" />
     <Compile Include="FormMenuApplication.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +161,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Entities\ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
