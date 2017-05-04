@@ -120,7 +120,7 @@
   <data name="Description" xml:space="preserve">
     <value>زصف الحزام</value>
   </data>
-  <data name="levelofThebelt" xml:space="preserve">
+  <data name="DegreeBelt" xml:space="preserve">
     <value>درجة الحزام</value>
   </data>
   <data name="NameofTheBelt" xml:space="preserve">

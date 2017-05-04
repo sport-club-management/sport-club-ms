@@ -13,13 +13,15 @@ namespace ClubManagement.Entities
 
 
     [GwinEntity(Localizable = true, DisplayMember = "NameofTheBelt")]
-    [Menu(Group = "Configuration")]
+    [Menu(Group = "Tournament & Exams Management")]
     public class Belt : BaseEntity
     {
 
         public Belt()
         {
             this.NameofTheBelt = new LocalizedString();
+            this.DegreeBelt = new LocalizedString();
+            this.Description = new LocalizedString();
 
         }
         [EntryForm]
@@ -32,16 +34,24 @@ namespace ClubManagement.Entities
         [EntryForm]
         [DataGrid]
         [Filter]
-        public String Description { get; set; }
+        public LocalizedString Description { get; set; }
 
 
      
         [EntryForm]
         [DataGrid]
         [Filter]
-        public string DegreeBelt { get; set; }
+        public LocalizedString DegreeBelt { get; set; }
 
+        [EntryForm]
+        [DataGrid]
+        [Relationship(Relation =RelationshipAttribute.Relations.OneToOne)]
         public BeltExam BeltExam { get; set; }
+        [EntryForm]
+        [DataGrid]
+
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Creation)]
+        public List<Trainee> Trainees { set; get; }
 
     }
 }

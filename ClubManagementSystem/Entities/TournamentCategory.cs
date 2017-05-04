@@ -15,7 +15,7 @@ namespace ClubManagement.Entities
     /// صنف البطولة
     /// </summary>
     [GwinEntity(Localizable = true, DisplayMember = "CategoryName")]
-    [Menu(Group = "Configuration")]
+    [Menu(Group = "Tournament & Exams Management")]
     public class TournamentCategory : BaseEntity
     {
         public TournamentCategory() {

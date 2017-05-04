@@ -9,17 +9,23 @@ using System.Threading.Tasks;
 
 namespace ClubManagement.Entities
 {
+
+    [GwinEntity(Localizable = true, DisplayMember = "NameofInComesCategory")]
+    [Menu(Group = "ExpenseManagement")]
     public class InComesCategory:BaseEntity
     {
         public InComesCategory()
         {
             this.NameofInComesCategory = new LocalizedString();
+            this.Description = new LocalizedString();
 
         }
         [EntryForm]
         [DataGrid]
         [Filter]
         public LocalizedString NameofInComesCategory { get; set; }
-        public string Description { get; set; }
+        [EntryForm]
+        [DataGrid]
+        public LocalizedString Description { get; set; }
     }
 }

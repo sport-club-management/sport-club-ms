@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace ClubManagement.Entities
 {
     [GwinEntity(Localizable = true, DisplayMember = "NameOfChampionRank")]
-    [Menu(Group = "Configuration")]
+    [Menu(Group = "Tournament & Exams Management")]
     public class TournamentRanking:BaseEntity
     {
 

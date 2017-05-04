@@ -55,6 +55,14 @@
         public virtual DbSet<Expense> Expenses { get; set; }
         public virtual DbSet<ExpenseCategory> ExpenseCategories { get; set; }
         public virtual DbSet<TournamentCategory> TournamentCategories { get; set; }
+        public virtual DbSet<BeltExam> BeltExams { get; set; }
+        public virtual DbSet<InComesCategory> InComesCategorys { get; set; }
+        public virtual DbSet<Incomes> Incomess { get; set; }
+        public virtual DbSet<Insurances> Insurancess { get; set; }
+        public virtual DbSet<Subscription> Subscriptions { get; set; }
+        public virtual DbSet<Tournament> Tournaments { get; set; }
+        public virtual DbSet<Trainee> Trainees { get; set; }
+        public virtual DbSet <Weight> Weight { get; set; }
 
 
         public virtual DbSet<TournamentRanking> TournamentRankings { get; set; }
