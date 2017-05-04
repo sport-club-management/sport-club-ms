@@ -18,6 +18,7 @@ namespace ClubManagement.Entities
         public EducationLevel()
         {
             this.Name = new LocalizedString();
+            this.Description = new LocalizedString();
         }
         [EntryForm]
         [DataGrid]
@@ -26,6 +27,6 @@ namespace ClubManagement.Entities
 
         [EntryForm]
         [DataGrid]
-        public string Description { get; set; }
+        public LocalizedString Description { get; set; }
     }
 }

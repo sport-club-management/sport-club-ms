@@ -19,6 +19,7 @@ namespace ClubManagement.Entities
         public Expense()
         {
             this.Name = new LocalizedString();
+            this.Description = new LocalizedString();
         }
 
         [EntryForm]

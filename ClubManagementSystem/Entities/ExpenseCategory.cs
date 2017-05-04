@@ -20,6 +20,7 @@ namespace ClubManagement.Entities
         public ExpenseCategory()
         {
             this.Name = new LocalizedString();
+            this.Description = new LocalizedString();
         }
 
         [EntryForm]

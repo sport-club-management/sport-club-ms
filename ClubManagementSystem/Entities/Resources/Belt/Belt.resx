@@ -120,8 +120,8 @@
   <data name="Description" xml:space="preserve">
     <value>Description</value>
   </data>
-  <data name="levelofThebelt" xml:space="preserve">
-    <value>LevelofThebelt</value>
+  <data name="DegreeBelt" xml:space="preserve">
+    <value>Degree Belt</value>
   </data>
   <data name="NameofTheBelt" xml:space="preserve">
     <value>Name of The Belt</value>

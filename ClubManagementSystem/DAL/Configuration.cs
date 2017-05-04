@@ -136,13 +136,58 @@
             GroupAgeAutorization.BusinessEntity = typeof(GroupAge).FullName;
             RoleAdmin.Authorizations.Add(GroupAgeAutorization);
             context.SaveChanges();
+            
+            //Belt Exam Autorization
+            Authorization BeltExamAutorization = new Authorization();
+            BeltExamAutorization.BusinessEntity = typeof(BeltExam).FullName;
+            RoleAdmin.Authorizations.Add(BeltExamAutorization);
+            context.SaveChanges();
 
+            //Incomes Autorization
+            Authorization IncomesAutorization = new Authorization();
+            IncomesAutorization.BusinessEntity = typeof(Incomes).FullName;
+            RoleAdmin.Authorizations.Add(IncomesAutorization);
+            context.SaveChanges();
 
+            //IncomesCategory Autorization
+            Authorization IncomesCategoryAutorization = new Authorization();
+            IncomesCategoryAutorization.BusinessEntity = typeof(InComesCategory).FullName;
+            RoleAdmin.Authorizations.Add(IncomesCategoryAutorization);
+            context.SaveChanges();
 
+            //Insurance Autorization
+            Authorization InsurancesAutorization = new Authorization();
+            InsurancesAutorization.BusinessEntity = typeof(Insurances).FullName;
+            RoleAdmin.Authorizations.Add(InsurancesAutorization);
+            context.SaveChanges();
 
-            Authorization BeltAutorization = new Authorization();
-            BeltAutorization.BusinessEntity = typeof(Belt).FullName;
-            RoleAdmin.Authorizations.Add(BeltAutorization);
+            //Subscription Autorization 
+            Authorization SubscriptionAutorization = new Authorization();
+            SubscriptionAutorization.BusinessEntity = typeof(Subscription).FullName;
+            RoleAdmin.Authorizations.Add(SubscriptionAutorization);
+            context.SaveChanges();
+
+            //Tournament Autorization
+            Authorization TournamentAutorization = new Authorization();
+            TournamentAutorization.BusinessEntity = typeof(Tournament).FullName;
+            RoleAdmin.Authorizations.Add(TournamentAutorization);
+            context.SaveChanges();
+            //Tournament ranking autorization
+            Authorization TournamentRankingAutorization = new Authorization();
+            TournamentRankingAutorization.BusinessEntity = typeof(TournamentRanking).FullName;
+            RoleAdmin.Authorizations.Add(TournamentRankingAutorization);
+            context.SaveChanges();
+
+            //Trainee Autorization
+            Authorization TraineeAutorization = new Authorization();
+            TraineeAutorization.BusinessEntity = typeof(Trainee).FullName;
+            RoleAdmin.Authorizations.Add(TraineeAutorization);
+
+            //Weigth Autorization
+            Authorization WeigthAutorization = new Authorization();
+            WeigthAutorization.BusinessEntity = typeof(Weight).FullName;
+            RoleAdmin.Authorizations.Add(WeigthAutorization);
+            context.SaveChanges();
 
 
             // Belt Data
@@ -151,8 +196,7 @@
                         ,
             new Belt()
             {
-                Description = "descA",
-                DegreeBelt = "levA",
+               
                 NameofTheBelt = new LocalizedString() { English = "Name", French = "Nom" ,Arab= "إسم الخزام" },
                 //  Description = new LocalizedString() { English = "Description", French = "Description" },
                 //levelofThebelt = new LocalizedString() { English = "Name", French = "Nom" }
@@ -226,28 +270,27 @@
                          {
                              Reference = "Primary",
                              Name = new LocalizedString() { Arab = "التعليم الإبتدائي",English= "Primary education",French= "l'enseignement primaire" },
-                             Description="Empty"
+                             
 
                          },
                            new EducationLevel()
                            {
                               Reference = "Secondary",
                               Name = new LocalizedString() { Arab = "التعليم الإعدادي", English = "Secondary education", French = "éducation préparatoire" },
-                              Description = "Empty"
+                            
 
                          },
                             new EducationLevel()
                             {
                                 Reference = "high school",
                                 Name = new LocalizedString() { Arab = "التعليم الإعدادي", English = "high school", French = "lycée" },
-                                Description = "Empty"
-
+                                
                             },
                                   new EducationLevel()
                                   {
                                       Reference = "University",
                                       Name = new LocalizedString() { Arab = "التعليم الجامعي", English = "University", French = "Université" },
-                                      Description = "Empty"
+                                    
 
                                   }
                          );

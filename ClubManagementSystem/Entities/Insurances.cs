@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App.Gwin.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,23 @@ using System.Threading.Tasks;
 
 namespace ClubManagement.Entities
 {
-   public  class Insurances:Incomes
+    [GwinEntity(Localizable = true, DisplayMember = "NameofInComesCategory")]
+    [Menu(Group = "ExpenseManagement")]
+    public  class Insurances:Incomes
     {
+        [EntryForm]
+        [DataGrid]
+      
         public DateTime StartDate { get; set; }
+
+        [EntryForm]
+        [DataGrid]
+       
         public DateTime EndDate { get; set; }
+        [EntryForm]
+        [DataGrid]
+
+        [Relationship(Relation = RelationshipAttribute.Relations.ManyToMany_Creation)]
+        public List<Trainee> Trainees { set; get; }
     }
 }

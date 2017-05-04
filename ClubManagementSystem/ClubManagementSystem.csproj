@@ -69,8 +69,131 @@
     <Compile Include="DAL\LovalDB.cs" />
     <Compile Include="DAL\Configuration.cs" />
     <Compile Include="DAL\ModelContext.cs" />
-    <Compile Include="Entities\Belt exam.cs" />
     <Compile Include="Entities\Belt.cs" />
+    <Compile Include="Entities\BeltExam.cs" />
+    <Compile Include="Entities\Resources\BeltExam\BeltExam.ar.Designer.cs">
+      <DependentUpon>BeltExam.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\BeltExam\BeltExam.fr.Designer.cs">
+      <DependentUpon>BeltExam.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\BeltExam\BeltExam.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BeltExam.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Resources\InComesCategory\InComesCategory.ar.Designer.cs">
+      <DependentUpon>InComesCategory.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\InComesCategory\InComesCategory.fr.Designer.cs">
+      <DependentUpon>InComesCategory.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\InComesCategory\InComesCategory.Designer.cs">
+      <DependentUpon>InComesCategory.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\Incomes\Incomes.ar.Designer.cs">
+      <DependentUpon>Incomes.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\Incomes\Incomes .fr.Designer.cs">
+      <DependentUpon>Incomes .fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\Incomes\Incomes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Incomes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Resources\Insurances\Insurances.ar.Designer.cs">
+      <DependentUpon>Insurances.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\Insurances\Insurances.fr.Designer.cs">
+      <DependentUpon>Insurances.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\Insurances\Insurances.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Insurances.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Resources\Subscription\Subscription.ar.Designer.cs">
+      <DependentUpon>Subscription.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\Subscription\Subscription.fr.Designer.cs">
+      <DependentUpon>Subscription.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\Subscription\Subscription.Designer.cs">
+      <DependentUpon>Subscription.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\TournamentRanking\TournamentRanking.ar.Designer.cs" />
+    <Compile Include="Entities\Resources\TournamentRanking\TournamentRanking.Designer.cs" />
+    <Compile Include="Entities\Resources\TournamentRanking\TournamentRanking.fr.Designer.cs" />
+    <Compile Include="Entities\Resources\Tournament\Tournament.ar.Designer.cs">
+      <DependentUpon>Tournament.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\Tournament\Tournament.fr.Designer.cs">
+      <DependentUpon>Tournament.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\Tournament\Tournament.Designer.cs">
+      <DependentUpon>Tournament.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\Trainee\Trainee.ar.Designer.cs">
+      <DependentUpon>Trainee.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\Trainee\Trainee.fr.Designer.cs">
+      <DependentUpon>Trainee.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\Trainee\Trainee.Designer.cs">
+      <DependentUpon>Trainee.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\Weight\Weight.ar.Designer.cs">
+      <DependentUpon>Weight.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\Weight\Weight.fr.Designer.cs">
+      <DependentUpon>Weight.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Entities\Resources\Weight\Weight.Designer.cs">
+      <DependentUpon>Weight.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Entities\TournamentRanking.cs" />
     <Compile Include="Entities\EducationLevel.cs" />
     <Compile Include="Entities\Expense.cs" />
@@ -113,6 +236,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Entities\Resources\BeltExam\BeltExam.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BeltExam.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\BeltExam\BeltExam.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BeltExam.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\BeltExam\BeltExam.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BeltExam.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Entities\Resources\Belt\Belt.ar.resx" />
     <EmbeddedResource Include="Entities\Resources\Belt\Belt.fr.resx" />
     <EmbeddedResource Include="Entities\Resources\Belt\Belt.resx" />
@@ -137,9 +272,96 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>GroupAge.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\InComesCategory\InComesCategory.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>InComesCategory.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\InComesCategory\InComesCategory.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>InComesCategory.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\InComesCategory\InComesCategory.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>InComesCategory.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\Incomes\Incomes.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Incomes.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\Incomes\Incomes .fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Incomes .fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\Incomes\Incomes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Incomes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\Insurances\Insurances.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Insurances.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\Insurances\Insurances.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Insurances.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\Insurances\Insurances.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Insurances.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\Subscription\Subscription.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Subscription.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\Subscription\Subscription.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Subscription.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\Subscription\Subscription.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Subscription.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Entities\Resources\TournamentCategory\TournamentCategory.ar.resx" />
     <EmbeddedResource Include="Entities\Resources\TournamentCategory\TournamentCategory.fr.resx" />
     <EmbeddedResource Include="Entities\Resources\TournamentCategory\TournamentCategory.resx" />
+    <EmbeddedResource Include="Entities\Resources\TournamentRanking\TournamentRanking.ar.resx" />
+    <EmbeddedResource Include="Entities\Resources\TournamentRanking\TournamentRanking.fr.resx" />
+    <EmbeddedResource Include="Entities\Resources\TournamentRanking\TournamentRanking.resx" />
+    <EmbeddedResource Include="Entities\Resources\Tournament\Tournament.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Tournament.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\Tournament\Tournament.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Tournament.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\Tournament\Tournament.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Tournament.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\Trainee\Trainee.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Trainee.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\Trainee\Trainee.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Trainee.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\Trainee\Trainee.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Trainee.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\Weight\Weight.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Weight.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\Weight\Weight.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Weight.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entities\Resources\Weight\Weight.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Weight.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMenuApplication.ar.resx">
       <DependentUpon>FormMenuApplication.cs</DependentUpon>
     </EmbeddedResource>
