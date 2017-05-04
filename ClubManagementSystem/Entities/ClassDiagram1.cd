@@ -10,18 +10,18 @@
   <Class Name="ClubManagement.Entities.Belt">
     <Position X="10.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAAAAAgAAAAAAAAAAQAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAEAAAAAgAAAAAAAAAAAAAAgAAAAAAAQAAAAAAAA=</HashCode>
       <FileName>Entities\Belt.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="BeltExam" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="ClubManagement.Entities.ChampionshipRanking">
+  <Class Name="ClubManagement.Entities.TournamentRanking">
     <Position X="4.75" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAABAAAA=</HashCode>
-      <FileName>Entities\ChampionshipRanking.cs</FileName>
+      <FileName>Entities\TournamentRanking.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClubManagement.Entities.EducationLevel" Collapsed="true">
@@ -68,7 +68,7 @@
   <Class Name="ClubManagement.Entities.InComesCategory" Collapsed="true">
     <Position X="1.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\InComesCategory.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -89,7 +89,7 @@
   <Class Name="ClubManagement.Entities.Tournament">
     <Position X="6.75" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAQAAAAAABAAAAAADAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAADAAAAAA=</HashCode>
       <FileName>Entities\Tournament.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -108,11 +108,11 @@
       <Property Name="EducationLevel" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
-      <Property Name="Belts" />
-      <Property Name="Weights" />
-      <Property Name="Tournaments" />
       <Property Name="Subscriptions" />
+      <Property Name="Weights" />
       <Property Name="Insurancess" />
+      <Property Name="Tournaments" />
+      <Property Name="Belts" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="ClubManagement.Entities.TournamentCategory" Collapsed="true">

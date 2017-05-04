@@ -84,7 +84,7 @@
            //ChampionshipRanking
 
             Authorization ChampionshipRankingAutorization = new Authorization();
-            ChampionshipRankingAutorization.BusinessEntity = typeof(ChampionshipRanking).FullName;
+            ChampionshipRankingAutorization.BusinessEntity = typeof(TournamentRanking).FullName;
             RoleAdmin.Authorizations.Add(ChampionshipRankingAutorization);
             //
 
@@ -152,7 +152,7 @@
             new Belt()
             {
                 Description = "descA",
-                levelofThebelt = "levA",
+                DegreeBelt = "levA",
                 NameofTheBelt = new LocalizedString() { English = "Name", French = "Nom" ,Arab= "إسم الخزام" },
                 //  Description = new LocalizedString() { English = "Description", French = "Description" },
                 //levelofThebelt = new LocalizedString() { English = "Name", French = "Nom" }
