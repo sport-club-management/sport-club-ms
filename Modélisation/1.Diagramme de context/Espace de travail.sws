@@ -7,7 +7,8 @@
 		<Model ID="{78086B01-C9E1-11D4-9552-0090277716A9}" Loaded="No" Name="Modèle Orienté Objet 1" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="Diagramme de context.MOO"/>
 		<Model Expanded="Yes" ID="{0ACCDB60-ACA9-401C-BFB9-433D839F892A}" Loaded="No" Name="Uses_Cases_Sport_Management_System" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="../2.Diagramme de cas d&#39;utilisation/Uses_Cases_Sport_Management_System.moo"/>
 		<Model Expanded="Yes" ID="{0ACCDB60-ACA9-401C-BFB9-433D839F892A}" Loaded="No" Name="Uses_Cases_Sport_Management_System" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="../2.Diagramme de cas d&#39;utilisation/Uses_Cases_Sport_Management_System.moo"/>
-		<Model Expanded="Yes" ID="{0ACCDB60-ACA9-401C-BFB9-433D839F892A}" Name="Uses_Cases_Sport_Management_System" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="../2.Diagramme de cas d&#39;utilisation/Uses_Cases_Sport_Management_System.moo"/>
+		<Model Expanded="Yes" ID="{0ACCDB60-ACA9-401C-BFB9-433D839F892A}" Loaded="No" Name="Uses_Cases_Sport_Management_System" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="../2.Diagramme de cas d&#39;utilisation/Uses_Cases_Sport_Management_System.moo"/>
+		<Model Expanded="Yes" ID="{B517C910-2E66-4890-90AC-D44561948913}" Name="GestionMagasin_CasUtilisation" Selected="Yes" Type="{18112060-1A4B-11D1-83D9-444553540000}" URL="../../../stock-management-app/Modelisation/Diagramme de Cas d&#39;utilisation/GestionMagasin_CasUtilisation.moo"/>
 	</Local>
 	<BrowserModule Name="Référentiel"/>
 </Workspace>
