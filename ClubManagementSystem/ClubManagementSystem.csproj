@@ -86,6 +86,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BeltExam.resx</DependentUpon>
     </Compile>
+    <Compile Include="Entities\Resources\EducationLevel\EducationLevel.Designer.cs" />
     <Compile Include="Entities\Resources\InComesCategory\InComesCategory.ar.Designer.cs">
       <DependentUpon>InComesCategory.ar.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -204,9 +205,6 @@
     <Compile Include="Entities\Insurances.cs" />
     <Compile Include="Entities\Resources\Belt\Belt.Designer.cs" />
     <Compile Include="Entities\Resources\Belt\Belt.fr.Designer.cs" />
-    <Compile Include="Entities\Resources\EducationLevel\EducationLevel.ar.Designer.cs" />
-    <Compile Include="Entities\Resources\EducationLevel\EducationLevel.Designer.cs" />
-    <Compile Include="Entities\Resources\EducationLevel\EducationLevel.fr.Designer.cs" />
     <Compile Include="Entities\Resources\GroupAge\GroupAge.ar.Designer.cs">
       <DependentUpon>GroupAge.ar.resx</DependentUpon>
       <AutoGen>True</AutoGen>

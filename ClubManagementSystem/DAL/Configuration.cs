@@ -197,7 +197,7 @@
             new Belt()
             {
                
-                NameofTheBelt = new LocalizedString() { English = "Name", French = "Nom" ,Arab= "إسم الخزام" },
+                NameofTheBelt = new LocalizedString() { English = "Name", French = "Nom" ,Arab= "إسم الحزام" },
                 //  Description = new LocalizedString() { English = "Description", French = "Description" },
                 //levelofThebelt = new LocalizedString() { English = "Name", French = "Nom" }
             });
@@ -269,21 +269,21 @@
                          new EducationLevel()
                          {
                              Reference = "Primary",
-                             Name = new LocalizedString() { Arab = "التعليم الإبتدائي",English= "Primary education",French= "l'enseignement primaire" },
+                             Name = new LocalizedString() { Arab = "التعليم الإبتدائي",English= "Primary education",French= "Education primaire" },
                              
 
                          },
                            new EducationLevel()
                            {
                               Reference = "Secondary",
-                              Name = new LocalizedString() { Arab = "التعليم الإعدادي", English = "Secondary education", French = "éducation préparatoire" },
+                              Name = new LocalizedString() { Arab = "التعليم الإعدادي", English = "Secondary education", French = "Education préparatoire" },
                             
 
                          },
                             new EducationLevel()
                             {
                                 Reference = "high school",
-                                Name = new LocalizedString() { Arab = "التعليم الإعدادي", English = "high school", French = "lycée" },
+                                Name = new LocalizedString() { Arab = "التعليمالثانوي", English = "High school", French = "Lycée" },
                                 
                             },
                                   new EducationLevel()

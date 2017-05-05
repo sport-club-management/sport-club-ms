@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 
 namespace ClubManagement.Entities
 {
-    //Youssef Temsamani Nya
     [GwinEntity(Localizable =true,DisplayMember ="Name")]
     [Menu(Group = "Configuration")]
    public class EducationLevel : BaseEntity
@@ -20,13 +19,14 @@ namespace ClubManagement.Entities
             this.Name = new LocalizedString();
             this.Description = new LocalizedString();
         }
-        [EntryForm]
-        [DataGrid]
-        [Filter]
+        [EntryForm(WidthControl  = 400)]
+        [DataGrid(WidthColonne = 200)]
+        [Filter(WidthControl = 300)]
         public LocalizedString Name { get; set; }
 
-        [EntryForm]
-        [DataGrid]
+        [EntryForm(MultiLine = true,NumberLine = 10,WidthControl = 600)]
+        [DataGrid(WidthColonne = 200)]
+        [Filter]
         public LocalizedString Description { get; set; }
     }
 }

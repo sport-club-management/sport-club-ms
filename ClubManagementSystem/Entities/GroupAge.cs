@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 
 namespace ClubManagement.Entities
 {
-    //Youssef Temsamani Nya
     /// <summary>
     /// الفئة العمرية
     /// </summary>
@@ -24,16 +23,16 @@ namespace ClubManagement.Entities
             this.NameOfCategory = new LocalizedString();
         }
 
-        [EntryForm]
-        [DataGrid]
-        [Filter]
+        [EntryForm(WidthControl = 400)]
+        [DataGrid(WidthColonne = 200)]
+        [Filter(WidthControl = 300)]
         public LocalizedString NameOfCategory { get; set; }
 
-        [EntryForm]
+        [EntryForm(WidthControl = 100)]
         [DataGrid]
         public int SmallestYear { get; set; }
 
-        [EntryForm]
+        [EntryForm(WidthControl = 100)]
         [DataGrid]
         public int LargestYear { get; set; }
     }
