@@ -22,7 +22,7 @@ namespace ClubManagement.Entities
             this.FatherName = new LocalizedString();
             this.FatherProfession = new LocalizedString();
         }
-        [EntryForm]
+        [EntryForm(GroupeBox = "Contact Information")]
         [DataGrid]
 
         public LocalizedString Birthplace { get; set; }

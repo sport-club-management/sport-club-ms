@@ -33,5 +33,14 @@ namespace GenericWinForm.Demo
 
         }
 
+        /// <summary>
+        /// Reload the form after language change
+        /// </summary>
+        public override void Reload()
+        {
+            base.Reload();
+            InitializeComponent();
+        }
+
     }
 }

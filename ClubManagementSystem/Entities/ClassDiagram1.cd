@@ -1,11 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="ClubManagement.Entities.Belt">
-    <Position X="10.75" Y="4.5" Width="1.5" />
+    <Position X="11.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAEAAAAAgAAAAAAAAAAAAAAgAAAAAAAQAAAAAAAA=</HashCode>
+      <HashCode>AAAAAEAAAAAgAAAAAAAAAACAAAgAAAAAAAQAAAAAAAA=</HashCode>
       <FileName>Entities\Belt.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BeltExam" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="ClubManagement.Entities.TournamentRanking">
     <Position X="4.75" Y="6.25" Width="1.5" />
@@ -48,7 +51,7 @@
   <Class Name="ClubManagement.Entities.Incomes">
     <Position X="2" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAQAAAAAACAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\Incomes.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -65,21 +68,21 @@
   <Class Name="ClubManagement.Entities.Insurances" Collapsed="true">
     <Position X="5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAEAAAAA=</HashCode>
       <FileName>Entities\Insurances.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClubManagement.Entities.Subscription" Collapsed="true">
     <Position X="3.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAEAAAAA=</HashCode>
       <FileName>Entities\Subscription.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClubManagement.Entities.Tournament">
     <Position X="6.75" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAADAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAEACAAAAAABAAAAAADAAAAAA=</HashCode>
       <FileName>Entities\Tournament.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -89,7 +92,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="ClubManagement.Entities.Trainee">
-    <Position X="8" Y="1.75" Width="1.5" />
+    <Position X="8" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAACAAAAAAAAAQAAAAAAACAAAABAAAAAEAEBAAAEIA=</HashCode>
       <FileName>Entities\Trainee.cs</FileName>
@@ -116,14 +119,14 @@
   <Class Name="ClubManagement.Entities.Weight" Collapsed="true">
     <Position X="10.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAEAQAAAAABAA=</HashCode>
       <FileName>Entities\Weight.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClubManagement.Entities.BeltExam">
-    <Position X="9" Y="6.25" Width="1.5" />
+    <Position X="9.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAQAAAAAAAABAAAAAAAAAAA=</HashCode>
       <FileName>Entities\BeltExam.cs</FileName>
     </TypeIdentifier>
   </Class>

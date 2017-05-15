@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubManagementSystem", "Clu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubManagementSystemTests", "ClubManagementSystemTests\ClubManagementSystemTests.csproj", "{25CD18DC-864D-492C-BC58-37A138AFE414}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{ADDD9B98-953C-4A81-8096-FD1CE139C90A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,8 @@ Global
 		{25CD18DC-864D-492C-BC58-37A138AFE414}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25CD18DC-864D-492C-BC58-37A138AFE414}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25CD18DC-864D-492C-BC58-37A138AFE414}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADDD9B98-953C-4A81-8096-FD1CE139C90A}.Debug|Any CPU.ActiveCfg = Debug
+		{ADDD9B98-953C-4A81-8096-FD1CE139C90A}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
