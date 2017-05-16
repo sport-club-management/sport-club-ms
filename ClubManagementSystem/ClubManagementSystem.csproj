@@ -97,32 +97,32 @@
       <DependentUpon>BeltExam.resx</DependentUpon>
     </Compile>
     <Compile Include="Entities\Resources\EducationLevel\EducationLevel.Designer.cs" />
-    <Compile Include="Entities\Resources\InComesCategory\InComesCategory.ar.Designer.cs">
+    <Compile Include="Entities\Accounting\Resources\InComesCategory\InComesCategory.ar.Designer.cs">
       <DependentUpon>InComesCategory.ar.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Entities\Resources\InComesCategory\InComesCategory.fr.Designer.cs">
+    <Compile Include="Entities\Accounting\Resources\InComesCategory\InComesCategory.fr.Designer.cs">
       <DependentUpon>InComesCategory.fr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Entities\Resources\InComesCategory\InComesCategory.Designer.cs">
+    <Compile Include="Entities\Accounting\Resources\InComesCategory\InComesCategory.Designer.cs">
       <DependentUpon>InComesCategory.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Entities\Resources\Incomes\Incomes.ar.Designer.cs">
+    <Compile Include="Entities\Accounting\Resources\Incomes\Incomes.ar.Designer.cs">
       <DependentUpon>Incomes.ar.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Entities\Resources\Incomes\Incomes .fr.Designer.cs">
+    <Compile Include="Entities\Accounting\Resources\Incomes\Incomes .fr.Designer.cs">
       <DependentUpon>Incomes .fr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Entities\Resources\Incomes\Incomes.Designer.cs">
+    <Compile Include="Entities\Accounting\Resources\Incomes\Incomes.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Incomes.resx</DependentUpon>
@@ -207,11 +207,11 @@
     </Compile>
     <Compile Include="Entities\TournamentRanking.cs" />
     <Compile Include="Entities\EducationLevel.cs" />
-    <Compile Include="Entities\Expense.cs" />
-    <Compile Include="Entities\ExpenseCategory.cs" />
+    <Compile Include="Entities\Accounting\Expense.cs" />
+    <Compile Include="Entities\Accounting\ExpenseCategory.cs" />
     <Compile Include="Entities\GroupAge.cs" />
-    <Compile Include="Entities\Incomes.cs" />
-    <Compile Include="Entities\InComesCategory.cs" />
+    <Compile Include="Entities\Accounting\Incomes.cs" />
+    <Compile Include="Entities\Accounting\InComesCategory.cs" />
     <Compile Include="Entities\Insurances.cs" />
     <Compile Include="Entities\Resources\Belt\Belt.Designer.cs" />
     <Compile Include="Entities\Resources\Belt\Belt.fr.Designer.cs" />
@@ -262,12 +262,12 @@
     <EmbeddedResource Include="Entities\Resources\EducationLevel\EducationLevel.ar.resx" />
     <EmbeddedResource Include="Entities\Resources\EducationLevel\EducationLevel.fr.resx" />
     <EmbeddedResource Include="Entities\Resources\EducationLevel\EducationLevel.resx" />
-    <EmbeddedResource Include="Entities\Resources\ExpenseCategory\ExpenseCategory.ar.resx" />
-    <EmbeddedResource Include="Entities\Resources\ExpenseCategory\ExpenseCategory.fr.resx" />
-    <EmbeddedResource Include="Entities\Resources\ExpenseCategory\ExpenseCategory.resx" />
-    <EmbeddedResource Include="Entities\Resources\Expense\Expense.ar.resx" />
-    <EmbeddedResource Include="Entities\Resources\Expense\Expense.fr.resx" />
-    <EmbeddedResource Include="Entities\Resources\Expense\Expense.resx" />
+    <EmbeddedResource Include="Entities\Accounting\Resources\ExpenseCategory\ExpenseCategory.ar.resx" />
+    <EmbeddedResource Include="Entities\Accounting\Resources\ExpenseCategory\ExpenseCategory.fr.resx" />
+    <EmbeddedResource Include="Entities\Accounting\Resources\ExpenseCategory\ExpenseCategory.resx" />
+    <EmbeddedResource Include="Entities\Accounting\Resources\Expense\Expense.ar.resx" />
+    <EmbeddedResource Include="Entities\Accounting\Resources\Expense\Expense.fr.resx" />
+    <EmbeddedResource Include="Entities\Accounting\Resources\Expense\Expense.resx" />
     <EmbeddedResource Include="Entities\Resources\GroupAge\GroupAge.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>GroupAge.ar.Designer.cs</LastGenOutput>
@@ -280,27 +280,27 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>GroupAge.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entities\Resources\InComesCategory\InComesCategory.ar.resx">
+    <EmbeddedResource Include="Entities\Accounting\Resources\InComesCategory\InComesCategory.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>InComesCategory.ar.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entities\Resources\InComesCategory\InComesCategory.fr.resx">
+    <EmbeddedResource Include="Entities\Accounting\Resources\InComesCategory\InComesCategory.fr.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>InComesCategory.fr.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entities\Resources\InComesCategory\InComesCategory.resx">
+    <EmbeddedResource Include="Entities\Accounting\Resources\InComesCategory\InComesCategory.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>InComesCategory.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entities\Resources\Incomes\Incomes.ar.resx">
+    <EmbeddedResource Include="Entities\Accounting\Resources\Incomes\Incomes.ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Incomes.ar.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entities\Resources\Incomes\Incomes .fr.resx">
+    <EmbeddedResource Include="Entities\Accounting\Resources\Incomes\Incomes .fr.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Incomes .fr.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Entities\Resources\Incomes\Incomes.resx">
+    <EmbeddedResource Include="Entities\Accounting\Resources\Incomes\Incomes.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Incomes.Designer.cs</LastGenOutput>
     </EmbeddedResource>
@@ -386,7 +386,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Entities\ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ClubManagement.Entities.Resources.Incomes {
+namespace ClubManagement.Entities.Accounting.Resources.Incomes {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace ClubManagement.Entities.Resources.Incomes {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ClubManagement.Entities.Resources.Incomes.Incomes", typeof(Incomes).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ClubManagement.Entities.Accounting.Resources.Incomes.Incomes", typeof(Incomes).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

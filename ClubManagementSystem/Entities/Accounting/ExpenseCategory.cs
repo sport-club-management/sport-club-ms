@@ -11,7 +11,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace ClubManagement.Entities
+namespace ClubManagement.Entities.Accounting
 {
     [GwinEntity(Localizable = true, DisplayMember = "Name")]
     [Menu(Group = "ExpenseManagement")]

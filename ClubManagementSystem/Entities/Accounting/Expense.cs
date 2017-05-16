@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClubManagement.Entities
+namespace ClubManagement.Entities.Accounting
 {
     [GwinEntity(Localizable = true, DisplayMember = "Name")]
     [Menu(Group = "ExpenseManagement")]
